@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChezaTekLogo } from './ChezaTekLogo';
 
 export default function FinancialHero() {
   return (
@@ -17,6 +18,7 @@ export default function FinancialHero() {
       <div className="relative z-10">
         {/* Navigation */}
         <nav className="flex items-center justify-between px-6 py-6 lg:px-12">
+          {/* <ChezaTekLogo width={48} height={48} /> */}
           <div className="text-2xl font-semibold">ChezaTek Solutions Limited</div>
           
           <div className="hidden md:flex items-center space-x-8">
