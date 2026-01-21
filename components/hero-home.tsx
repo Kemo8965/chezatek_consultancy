@@ -1,154 +1,69 @@
-import Image from "next/image";
-import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
+import React from 'react';
 
-export default function HeroHome() {
+export default function FinancialHero() {
   return (
-    <section className="relative">
-      <PageIllustration />
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {/* Hero content */}
-        <div className="pb-12 pt-32 md:pb-20 md:pt-40">
-          {/* Section header */}
-          <div className="pb-12 text-center md:pb-16">
-            <div
-              className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]"
-              data-aos="zoom-y-out"
-            >
-              <div className="-mx-0.5 flex justify-center -space-x-3">
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar01}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar02}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar03}
-                  width={32}
-                  height={32}
-                  alt="Avatar 02"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar04}
-                  width={32}
-                  height={32}
-                  alt="Avatar 03"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar05}
-                  width={32}
-                  height={32}
-                  alt="Avatar 04"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar06}
-                  width={32}
-                  height={32}
-                  alt="Avatar 05"
-                />
-              </div>
-            </div>
-            <h1
-              className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
-              data-aos="zoom-y-out"
-              data-aos-delay={150}
-            >
-              ChezaTek  <br className="max-lg:hidden" />
-              
-            </h1>
-            <div className="mx-auto max-w-3xl">
-              <p
-                className="mb-8 text-lg text-gray-700"
-                data-aos="zoom-y-out"
-                data-aos-delay={300}
-              >
-                Helping SMEs and financial businesses <span className="text-2xl text-red-500"> identify</span>  IT security risks, 
-              <span className="text-2xl text-yellow-600"> prevent</span>   downtime, and <span className="text-2xl text-green-700"> build</span>  scalable systems—without the cost of a full IT department
-              </p>
-              <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
-                <div
-                  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
-                  data-aos="zoom-y-out"
-                  data-aos-delay={450}
-                >
-                  <a
-                    className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
-                  >
-                    <span className="relative inline-flex items-center">
-                      Schedule a consultation{" "}
-                      <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
-                    </span>
-                  </a>
-                  <a
-                    className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Learn More
-                  </a>
-                </div>
-              </div>
-            </div>
+    <div className="relative min-h-screen bg-gray-900 text-white">
+      {/* Background Image Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop')`,
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10">
+        {/* Navigation */}
+        <nav className="flex items-center justify-between px-6 py-6 lg:px-12">
+          <div className="text-2xl font-semibold">ChezaTek Solutions Limited</div>
+          
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#benefits" className="text-gray-200 hover:text-white transition">Benefits</a>
+            <a href="#about" className="text-gray-200 hover:text-white transition">About</a>
+            <a href="#testimonials" className="text-gray-200 hover:text-white transition">Testimonials</a>
+            <a href="#faqs" className="text-gray-200 hover:text-white transition">FAQs</a>
           </div>
-          {/* Hero image */}
-          <div
-            className="mx-auto max-w-3xl"
-            data-aos="zoom-y-out"
-            data-aos-delay={600}
-          >
-            {/* <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  cruip.com
-                </span>
-              </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span>
-                <br />
-                <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
-                </span>
-                <br />
-                <span className="animate-[code-6_10s_infinite]">
-                  Package published.
-                </span>
-              </div>
-            </div> */}
+
+          <button className="border border-gray-400 hover:border-white px-6 py-2.5 rounded-md transition hover:bg-white/10">
+            Get Your Free Consult
+          </button>
+        </nav>
+
+        {/* Hero Content */}
+        <div className="px-6 lg:px-12 pt-32 pb-20">
+          <div className="max-w-4xl">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+              Enterprise IT Solutions <br/>Without The Enterprise Cost.
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-12">
+              Helping SMEs and financial businesses <span className="text-2xl text-red-500"> identify</span>  IT security risks, 
+              <span className="text-2xl text-yellow-600"> prevent</span>   downtime, and <span className="text-2xl text-green-700"> build</span>  scalable systems—without the cost of a full IT department
+            </p>
+          </div>
+
+          {/* Bottom Section */}
+          <div className="absolute bottom-8 left-6 lg:left-12 right-6 lg:right-12 flex items-center justify-between">
+            <div className="text-lg font-light">
+              <span className="text-gray-400">01</span>
+            </div>
+            <div className="text-lg text-gray-300">
+              A Group Of Experts Dedicated To Your Business Growth
+            </div>
+            <button className="hidden lg:block px-8 py-3 border border-gray-400 hover:border-white rounded-md transition hover:bg-white/10">
+              View More
+            </button>
           </div>
         </div>
       </div>
-    </section>
+
+      {/* Mobile Menu Button */}
+      <button className="md:hidden fixed top-6 right-6 z-20 p-2">
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
   );
 }

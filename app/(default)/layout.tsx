@@ -43,7 +43,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <HeaderWrapper />
+      {/* <HeaderWrapper /> */}
 
       <main className="grow">{children}</main>
 

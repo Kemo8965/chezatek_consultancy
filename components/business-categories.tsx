@@ -1,304 +1,185 @@
-import Image from "next/image";
-import Logo01 from "@/public/images/logo-01.svg";
-import Logo02 from "@/public/images/logo-02.svg";
-import Logo03 from "@/public/images/logo-03.svg";
-import Logo04 from "@/public/images/logo-04.svg";
-import Logo05 from "@/public/images/logo-05.svg";
-import Logo06 from "@/public/images/logo-06.svg";
-import Logo07 from "@/public/images/logo-07.svg";
-import Logo08 from "@/public/images/logo-08.svg";
-import Logo09 from "@/public/images/logo-09.svg";
+"use client";
+import React from 'react';
+import { Shield, Server, Cloud, Lock, Zap, Database } from 'lucide-react';
 
-export default function BusinessCategories() {
+export default function TechServicesShowcase() {
+  const services = [
+    {
+      icon: Shield,
+      title: 'Cybersecurity',
+      color: 'text-red-500',
+      bgColor: 'bg-red-500/10',
+      delay: '0s'
+    },
+    {
+      icon: Server,
+      title: 'Infrastructure',
+      color: 'text-blue-500',
+      bgColor: 'bg-blue-500/10',
+      delay: '1s'
+    },
+    {
+      icon: Cloud,
+      title: 'Cloud Solutions',
+      color: 'text-purple-500',
+      bgColor: 'bg-purple-500/10',
+      delay: '2s'
+    },
+    {
+      icon: Lock,
+      title: 'Data Protection',
+      color: 'text-yellow-500',
+      bgColor: 'bg-yellow-500/10',
+      delay: '3s'
+    },
+    {
+      icon: Zap,
+      title: 'Performance',
+      color: 'text-green-500',
+      bgColor: 'bg-green-500/10',
+      delay: '4s'
+    },
+    {
+      icon: Database,
+      title: 'Data Management',
+      color: 'text-indigo-500',
+      bgColor: 'bg-indigo-500/10',
+      delay: '5s'
+    }
+  ];
+
   return (
-    <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
-          {/* Tab panels */}
-          <div className="relative flex h-[324px] items-center justify-center">
-            {/* Small blue dots */}
-            <div className="absolute -z-10">
-              <svg
-                className="fill-blue-500"
-                xmlns="http://www.w3.org/2000/svg"
-                width={164}
-                height={41}
-                viewBox="0 0 164 41"
-                fill="none"
-              >
-                <circle cx={1} cy={8} r={1} fillOpacity="0.24" />
-                <circle cx={1} cy={1} r={1} fillOpacity="0.16" />
-                <circle cx={1} cy={15} r={1} />
-                <circle cx={1} cy={26} r={1} fillOpacity="0.64" />
-                <circle cx={1} cy={33} r={1} fillOpacity="0.24" />
-                <circle cx={8} cy={8} r={1} />
-                <circle cx={8} cy={15} r={1} />
-                <circle cx={8} cy={26} r={1} fillOpacity="0.24" />
-                <circle cx={15} cy={15} r={1} fillOpacity="0.64" />
-                <circle cx={15} cy={26} r={1} fillOpacity="0.16" />
-                <circle cx={8} cy={33} r={1} />
-                <circle cx={1} cy={40} r={1} />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 7)"
-                  fillOpacity="0.24"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 0)"
-                  fillOpacity="0.16"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 14)"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 25)"
-                  fillOpacity="0.64"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 32)"
-                  fillOpacity="0.24"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 157 7)"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 157 14)"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 157 25)"
-                  fillOpacity="0.24"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 150 14)"
-                  fillOpacity="0.64"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 150 25)"
-                  fillOpacity="0.16"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 157 32)"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 39)"
-                />
-              </svg>
-            </div>
-            {/* Blue glow */}
-            <div className="absolute -z-10">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={432}
-                height={160}
-                viewBox="0 0 432 160"
-                fill="none"
-              >
-                <g opacity="0.6" filter="url(#filter0_f_2044_9)">
-                  <path
-                    className="fill-blue-500"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M80 112C62.3269 112 48 97.6731 48 80C48 62.3269 62.3269 48 80 48C97.6731 48 171 62.3269 171 80C171 97.6731 97.6731 112 80 112ZM352 112C369.673 112 384 97.6731 384 80C384 62.3269 369.673 48 352 48C334.327 48 261 62.3269 261 80C261 97.6731 334.327 112 352 112Z"
-                  />
-                </g>
-                <defs>
-                  <filter
-                    id="filter0_f_2044_9"
-                    x={0}
-                    y={0}
-                    width={432}
-                    height={160}
-                    filterUnits="userSpaceOnUse"
-                    colorInterpolationFilters="sRGB"
-                  >
-                    <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                    <feBlend
-                      mode="normal"
-                      in="SourceGraphic"
-                      in2="BackgroundImageFix"
-                      result="shape"
-                    />
-                    <feGaussianBlur
-                      stdDeviation={32}
-                      result="effect1_foregroundBlur_2044_9"
-                    />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
-            {/* Horizontal lines */}
-            <div className="absolute inset-x-0 top-0 -z-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-0 bottom-0 -z-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-[200px] top-1/2 -z-10 h-px bg-linear-to-r from-transparent via-blue-500/60 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-0 top-1/2 -z-10 h-px -translate-y-[82px] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply before:absolute before:inset-y-0 before:w-24 before:animate-[line_10s_ease-in-out_infinite_both] before:bg-linear-to-r before:via-blue-500"></div>
-            <div className="absolute inset-x-0 top-1/2 -z-10 h-px translate-y-[82px] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply before:absolute before:inset-y-0 before:w-24 before:animate-[line_10s_ease-in-out_infinite_5s_both] before:bg-linear-to-r before:via-blue-500"></div>
-            {/* Diagonal lines */}
-            <div className="absolute inset-x-[300px] top-1/2 -z-10 h-px rotate-[20deg] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-[300px] top-1/2 -z-10 h-px -rotate-[20deg] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            {/* Vertical lines */}
-            <div className="absolute inset-y-0 left-1/2 -z-10 w-px -translate-x-[216px] bg-linear-to-b from-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-y-0 left-1/2 -z-10 w-px translate-x-[216px] bg-linear-to-t from-gray-200 to-transparent mix-blend-multiply"></div>
-            {/* Logos */}
-            <div className="absolute before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] before:[background:conic-gradient(from_180deg,transparent,var(--color-blue-500))_border-box]">
-              <div className="animate-[breath_8s_ease-in-out_infinite_both]">
-                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                  <Image
-                    className="relative"
-                    src={Logo01}
-                    width={32}
-                    height={32}
-                    alt="Logo 01"
-                  />
+    <section className="bg-gray-100 py-20 px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <p className="text-sm text-gray-500 mb-4">Our Core Services</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            Complete IT Solutions<br />For Modern Businesses
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            From security to scalability, we provide comprehensive IT services that keep your business running smoothly and securely.
+          </p>
+        </div>
+
+        {/* Services Grid with Animations */}
+        <div className="relative">
+          {/* Background decorative elements */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-10">
+            <div className="w-96 h-96 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          </div>
+          
+          {/* Center Hub */}
+          <div className="relative flex items-center justify-center min-h-[500px]">
+            {/* Central Circle - "Your Business" */}
+            <div className="absolute z-10">
+              <div className="relative">
+                {/* Spinning ring animation */}
+                <div className="absolute inset-0 -m-4">
+                  <div className="w-32 h-32 rounded-full border-4 border-transparent border-t-blue-500 animate-spin"></div>
+                </div>
+                <div className="flex items-center justify-center w-24 h-24 bg-gray-900 rounded-full shadow-2xl">
+                  <div className="text-white text-center">
+                    <div className="text-xs font-semibold">Your</div>
+                    <div className="text-sm font-bold">Business</div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="relative flex flex-col">
-              <article className="flex h-full w-full items-center justify-center focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-300">
-                <div className="absolute -translate-x-[136px]">
-                  <div className="animate-[breath_7s_ease-in-out_3s_infinite_both]">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo02}
-                        width={23}
-                        height={22}
-                        alt="Logo 02"
-                      />
+            {/* Orbiting Service Icons */}
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              const angle = (index * 60) - 90; // Distribute evenly in circle
+              const radius = 200; // Distance from center
+              const x = Math.cos(angle * Math.PI / 180) * radius;
+              const y = Math.sin(angle * Math.PI / 180) * radius;
+              
+              return (
+                <div
+                  key={index}
+                  className="absolute"
+                  style={{
+                    transform: `translate(${x}px, ${y}px)`,
+                    animation: `float 3s ease-in-out ${service.delay} infinite alternate`
+                  }}
+                >
+                  <div className={`${service.bgColor} p-4 rounded-2xl shadow-lg backdrop-blur-sm border border-gray-200 hover:scale-110 transition-transform duration-300 cursor-pointer group`}>
+                    <div className="relative">
+                      <Icon className={`w-8 h-8 ${service.color} group-hover:scale-125 transition-transform`} />
+                      {/* Connection line to center */}
+                      <div 
+                        className="absolute top-1/2 left-1/2 w-1 bg-gradient-to-r from-gray-300 to-transparent opacity-30"
+                        style={{
+                          height: `${Math.sqrt(x*x + y*y)}px`,
+                          transform: `rotate(${Math.atan2(-y, -x)}rad) translateX(-50%)`,
+                          transformOrigin: 'left center'
+                        }}
+                      ></div>
+                    </div>
+                    <div className="mt-2 text-xs font-semibold text-gray-900 whitespace-nowrap">
+                      {service.title}
                     </div>
                   </div>
                 </div>
-                <div className="absolute translate-x-[136px]">
-                  <div className="animate-[breath_7s_ease-in-out_3.5s_infinite_both]">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo03}
-                        width={22}
-                        height={22}
-                        alt="Logo 03"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[216px] -translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_3.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo04}
-                        width={24}
-                        height={22}
-                        alt="Logo 04"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-y-[82px] translate-x-[216px]">
-                  <div className="animate-[breath_6s_ease-in-out_1.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo05}
-                        width={25}
-                        height={25}
-                        alt="Logo 05"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[216px] translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo06}
-                        width={20}
-                        height={18}
-                        alt="Logo 06"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[216px] translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_2.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo07}
-                        width={25}
-                        height={25}
-                        alt="Logo 07"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <Image
-                        className="relative"
-                        src={Logo08}
-                        width={20}
-                        height={20}
-                        alt="Logo 08"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_4s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <Image
-                        className="relative"
-                        src={Logo09}
-                        width={21}
-                        height={13}
-                        alt="Logo 09"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </article>
+              );
+            })}
+
+            {/* Data Flow Animation - Particles */}
+            <div className="absolute inset-0 pointer-events-none">
+              {[...Array(8)].map((_, i) => (
+                <div
+                  key={i}
+                  className="absolute w-2 h-2 bg-blue-500 rounded-full opacity-60"
+                  style={{
+                    animation: `orbit 4s linear ${i * 0.5}s infinite`,
+                    left: '50%',
+                    top: '50%'
+                  }}
+                ></div>
+              ))}
             </div>
           </div>
         </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <p className="text-gray-900 font-medium mb-6">
+            Powering businesses with reliable, secure, and scalable IT infrastructure
+          </p>
+          <button className="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition-colors">
+            Explore Our Services
+          </button>
+        </div>
       </div>
+
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translate(var(--x), var(--y)) translateY(0px);
+          }
+          50% {
+            transform: translate(var(--x), var(--y)) translateY(-10px);
+          }
+        }
+
+        @keyframes orbit {
+          0% {
+            transform: translate(-50%, -50%) rotate(0deg) translateX(180px) rotate(0deg);
+            opacity: 0;
+          }
+          25% {
+            opacity: 1;
+          }
+          75% {
+            opacity: 1;
+          }
+          100% {
+            transform: translate(-50%, -50%) rotate(360deg) translateX(180px) rotate(-360deg);
+            opacity: 0;
+          }
+        }
+      `}</style>
     </section>
   );
 }
