@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function WhyChooseUs() {
   const stats = [
-    { percentage: '99.9%', label: 'Average System Uptime' },
-    { percentage: '85%', label: 'Reduction in IT Incidents' },
-    { percentage: '94%', label: 'Client Retention Rate' },
-    { percentage: '97%', label: 'Client Satisfaction Rate' },
+    { percentage: '95%', label: 'Average System Uptime' },
+    { percentage: '80%', label: 'Reduction in IT Incidents' },
+    { percentage: '90%', label: 'Client Retention Rate' },
+    { percentage: '85%', label: 'Client Satisfaction Rate' },
   ];
 
   return (

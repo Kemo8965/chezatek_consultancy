@@ -86,7 +86,7 @@ export default function ITFeaturesSection() {
                   Read Our Success Story for Inspiration
                 </h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">
-                  Discover how we helped a financial services firm reduce IT costs by 40% while improving system uptime to 99.9%. Through strategic infrastructure upgrades and proactive monitoring, they eliminated downtime and scaled seamlessly.
+                  Discover how we helped a financial services firm reduce IT security risks by more than 80% while improving system uptime to greater than 90%. Through strategic infrastructure upgrades and proactive monitoring, they eliminated downtime and scaled seamlessly.
                 </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Our comprehensive approach to IT management transformed their operations, allowing them to focus on growth while we handled the technology. From security audits to cloud migration, we delivered results that exceeded expectations.

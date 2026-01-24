@@ -39,15 +39,15 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   Integrations
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="#0"
                 >
                   Pricing & Plans
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="#0"
@@ -62,7 +62,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 >
                   Our method
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -78,7 +78,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   About us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="#0"
@@ -93,7 +93,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 >
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
@@ -102,14 +102,14 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   Careers
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
                   href="#0"
                 >
                   Financial statements
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
